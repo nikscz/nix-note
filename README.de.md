@@ -4,6 +4,8 @@
 
 **Projekt-Notizen nebenbei – `/note` tippen, fertig. Claude kennt sie und wendet sie an.**
 
+<img src="docs/demo-de.gif" alt="/note tippen, während Claude arbeitet: die Notiz landet mit Datum, Projekt und Chat in der Notiz-Datei" width="100%">
+
 ## Das Problem
 
 Während Claude arbeitet, fällt dir etwas ein: „Logo größer“, „Farbe nochmal prüfen“. Schreibst du es in den Chat, unterbrichst du Claude oder es geht im Verlauf unter. Und eine Woche später weißt du nicht mehr, zu welchem Projekt die Notiz gehörte.

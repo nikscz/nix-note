@@ -4,6 +4,8 @@
 
 **Project notes on the side – type `/note`, done. Claude knows them and applies them.**
 
+<img src="docs/demo-en.gif" alt="Typing /note while Claude works: the note lands in the notes file with date, project and chat" width="100%">
+
 ## The problem
 
 While Claude works, something occurs to you: "bigger logo", "check that colour again". Write it in the chat and you interrupt Claude, or it gets lost in the history. A week later you don't remember which project it belonged to.
