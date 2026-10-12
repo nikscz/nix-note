@@ -4,7 +4,7 @@
 
 **Projekt-Notizen nebenbei – `/note` tippen, fertig. Claude kennt sie und wendet sie an.**
 
-<img src="docs/demo-de.gif" alt="/note tippen, während Claude arbeitet: die Notiz wird mit Projekt und Datum an deine Notizen gepinnt" width="100%">
+<img src="docs/demo-de.gif" alt="/note tippen, während Claude arbeitet; danach liest Claude die Notiz und setzt sie um" width="100%">
 
 ## Das Problem
 
