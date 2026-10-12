@@ -76,7 +76,7 @@ anyway.
 /plugin uninstall nix-note@nix-note
 ```
 
-## More from nix
+## More from nikscz
 
 - [nix-checklist-sidebar](https://github.com/nikscz/nix-checklist-sidebar) – Claude's plan as a checklist
 - [nix-progress-bar](https://github.com/nikscz/nix-progress-bar) – progress bar with a time estimate

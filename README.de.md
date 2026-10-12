@@ -76,7 +76,7 @@ kommt aber ohnehin in deiner Sprache.
 /plugin uninstall nix-note@nix-note
 ```
 
-## Mehr von nix
+## Mehr von nikscz
 
 - [nix-checklist-sidebar](https://github.com/nikscz/nix-checklist-sidebar) – Claudes Plan als Checkliste
 - [nix-progress-bar](https://github.com/nikscz/nix-progress-bar) – Fortschrittsleiste mit Zeitschätzung
