@@ -1,0 +1,12 @@
+{
+  "name": "nix-note",
+  "version": "2.0.0",
+  "description": "/note Text – Notiz mit Datum, Projekt, Ordner und Chat, nebenbei",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "nikscz",
+    "url": "https://github.com/nikscz"
+  },
+  "repository": "https://github.com/nikscz/nix-note",
+  "license": "MIT"
+}

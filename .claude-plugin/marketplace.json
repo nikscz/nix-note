@@ -1,0 +1,18 @@
+{
+  "name": "nix-note",
+  "owner": {
+    "name": "nikscz",
+    "url": "https://github.com/nikscz"
+  },
+  "metadata": {
+    "description": "/note Text – Notiz mit Datum, Projekt, Ordner und Chat, nebenbei"
+  },
+  "plugins": [
+    {
+      "name": "nix-note",
+      "source": "./",
+      "description": "/note Text – Notiz mit Datum, Projekt, Ordner und Chat, nebenbei",
+      "version": "2.0.0"
+    }
+  ]
+}
