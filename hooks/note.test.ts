@@ -16,8 +16,8 @@ test('a note carries date, project, folder, git, chat and topic', async ($, on) 
     files.set(e.path, e.text)
     return { value: undefined }
   })
-  on('session.root', () => ({ value: '/Users/anna/Projekte/clipping' }))
-  on('session.repo', () => ({ value: { root: '/x', remote: null, internal: false, name: 'anna/clipping' } }) as never)
+  on('session.root', () => ({ value: '/Users/anna/Projekte/bakery' }))
+  on('session.repo', () => ({ value: { root: '/x', remote: null, internal: false, name: 'anna/bakery' } }) as never)
   on('session.id', () => ({ value: 'abc-123' }))
   on('prompt.submit', (_, e) => ({ text: e.text }))
 
@@ -27,9 +27,9 @@ test('a note carries date, project, folder, git, chat and topic', async ($, on) 
   expect(path).toEndWith('/Documents/Claude-Notizen.md')
   expect(text).toBe(
     '# Meine Notizen\n' +
-      '\n## 07.10.2026 18:53 · clipping\n\nLogo größer machen\n\n' +
-      '- Ordner: /Users/anna/Projekte/clipping\n' +
-      '- Git: anna/clipping\n' +
+      '\n## 07.10.2026 18:53 · bakery\n\nLogo größer machen\n\n' +
+      '- Ordner: /Users/anna/Projekte/bakery\n' +
+      '- Git: anna/bakery\n' +
       '- Im Chat gerade: „Mach den Header ruhiger“\n' +
       '- Chat-ID: abc-123\n',
   )
