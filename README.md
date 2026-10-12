@@ -1,78 +1,83 @@
+🇩🇪 [Deutsch](README.de.md)
+
 # nix note
 
-**Projekt-Notizen nebenbei – `/note` tippen, fertig. Claude kennt sie und wendet sie an.**
+**Project notes on the side – type `/note`, done. Claude knows them and applies them.**
 
-> [!WARNING]
-> **Frühe Version – Updates kommen.** Diese Art Erweiterung ist bei Claude Code noch ganz neu.
-> Nach einem Update von Anthropic kann etwas nicht mehr funktionieren, bis hier ein Fix kommt.
-> Mit Updates eingeschaltet (siehe unten) bekommst du ihn automatisch.
+## The problem
 
-## Das Problem
+While Claude works, something occurs to you: "bigger logo", "check that colour again". Write it in the chat and you interrupt Claude, or it gets lost in the history. A week later you don't remember which project it belonged to.
 
-Während Claude arbeitet, fällt dir etwas ein: „Logo größer“, „Farbe nochmal prüfen“.
-Schreibst du es in den Chat, unterbrichst du Claude oder es geht im Verlauf unter.
-Und eine Woche später weißt du nicht mehr, zu welchem Projekt die Notiz gehörte.
+## The solution
 
-## Die Lösung
+`/note` saves a note with date, project and chat into one file – without interrupting Claude. And Claude knows your notes: before it works on a project, it checks that project's notes and applies them.
 
-```
-/note Logo größer machen
-```
+## Install
 
-Die Notiz landet sofort in **Dokumente/Claude-Notizen.md** – auch während Claude arbeitet,
-ohne es zu unterbrechen. Jede Notiz bekommt automatisch:
-
-- Datum und Uhrzeit, Projekt und Ordner, Git-Repository (falls vorhanden)
-- worum es im Chat gerade ging, und die Chat-ID
-
-**Der eigentliche Vorteil: Claude kennt deine Notizen und wendet sie an.**
-Arbeitet Claude später an einem Projekt, schaut es vorher nach Notizen zu genau diesem Projekt
-und berücksichtigt sie – „Logo größer machen“ wird beim nächsten Design-Schritt mitgedacht.
-Gehört eine Notiz nicht zur aktuellen Aufgabe, fragt Claude erst nach.
-
-Und du kannst fragen: *„Was hab ich mir zum Logo notiert?“* – Claude sucht die Notizen raus
-und sagt dir, aus welchem Projekt und Chat sie stammen.
-
-Eine einzige Datei für alles, mit jedem Texteditor zu öffnen.
-
-## Installieren
-
-1. Claude Code öffnen (Desktop-App oder Terminal).
-2. Ins Eingabefeld schreiben und Enter drücken:
+1. Open Claude Code (desktop app or terminal).
+2. Type this into the message box and press Enter:
    ```
    /plugin marketplace add nikscz/nix-note
    ```
-3. Dann:
+3. Then:
    ```
    /plugin install nix-note@nix-note
    ```
-4. Claude Code einmal neu starten (oder `/reload-plugins` eingeben). Fertig.
+4. Restart Claude Code once (or type `/reload-plugins`). Done.
+
+No GitHub account needed.
+
+## How to
+
+```
+/note make the logo bigger
+```
+
+- The note lands in **Documents/Claude-Notes.md** (German system: **Claude-Notizen.md**) – even
+  while Claude is working.
+- Each note gets automatically: date and time, project and folder, Git repository (if any),
+  what the chat was about, and the chat ID.
+- **Claude applies them:** before building or changing something in a project, Claude looks for
+  that project's notes and takes them into account. If a note is outside the current task,
+  Claude asks first.
+- **Ask about them:** *"What did I note about the logo?"* – Claude finds the notes and tells you
+  which project and chat they came from.
+- One file for everything, open it with any text editor.
+
+| Command | What happens |
+|---|---|
+| `/note your text` | saves the note |
+
+> [!WARNING]
+> **Early version – updates will come.** This kind of extension is still brand new in Claude Code.
+> After an update from Anthropic something may stop working until a fix lands here.
+> With automatic updates on (below) you get the fix by itself.
 
 ## Updates
 
-Einmal einschalten und vergessen: `/plugin` eingeben → **Marketplaces** → **nix-note** →
-automatische Updates an.
+Turn it on once and forget it: type `/plugin` → **Marketplaces** → **nix-note** → turn on
+automatic updates.
 
-Oder von Hand, wann immer du willst:
+Or by hand, whenever you like:
 ```
 /plugin marketplace update nix-note
 ```
 
-## Deinstallieren
+## Uninstall
 
 ```
 /plugin uninstall nix-note@nix-note
 ```
 
-## Mehr von nix
+## More from nix
 
-- [nix-checklist-sidebar](https://github.com/nikscz/nix-checklist-sidebar) – Claudes Plan als Checkliste
-- [nix-progress-bar](https://github.com/nikscz/nix-progress-bar) – Fortschrittsleiste mit Zeitschätzung
-- [nix-done-sound](https://github.com/nikscz/nix-done-sound) – dein eigener Sound, wenn Claude fertig ist
+- [nix-checklist-sidebar](https://github.com/nikscz/nix-checklist-sidebar) – Claude's plan as a checklist
+- [nix-progress-bar](https://github.com/nikscz/nix-progress-bar) – progress bar with a time estimate
+- [nix-done-sound](https://github.com/nikscz/nix-done-sound) – your own alert sound when Claude is done
 
-## Lizenz
+## License
 
-[MIT](LICENSE) – nutzen, ändern, weitergeben erlaubt, ohne Gewähr.
+[MIT](LICENSE) – use it, change it, pass it on, no warranty.
 
-Mit Claude gebaut, für Claude. Fehler gefunden oder eine Idee?
-Gern ein [Issue](https://github.com/nikscz/nix-note/issues) aufmachen.
+Made with Claudius, for Claudius. Found a bug or have an idea?
+Open an [issue](https://github.com/nikscz/nix-note/issues).

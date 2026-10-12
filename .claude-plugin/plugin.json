@@ -1,7 +1,7 @@
 {
   "name": "nix-note",
-  "version": "2.1.0",
-  "description": "/note Text – Projekt-Notizen nebenbei, die Claude kennt und anwendet",
+  "version": "2.2.0",
+  "description": "/note text – project notes on the side that Claude knows and applies",
   "types": "./types/index.d.ts",
   "author": {
     "name": "nikscz",

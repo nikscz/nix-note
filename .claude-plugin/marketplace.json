@@ -5,14 +5,14 @@
     "url": "https://github.com/nikscz"
   },
   "metadata": {
-    "description": "/note Text – Projekt-Notizen nebenbei, die Claude kennt und anwendet"
+    "description": "/note text – project notes on the side that Claude knows and applies"
   },
   "plugins": [
     {
       "name": "nix-note",
       "source": "./",
-      "description": "/note Text – Projekt-Notizen nebenbei, die Claude kennt und anwendet",
-      "version": "2.1.0"
+      "description": "/note text – project notes on the side that Claude knows and applies",
+      "version": "2.2.0"
     }
   ]
 }
