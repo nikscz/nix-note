@@ -48,6 +48,26 @@ No GitHub account needed.
 |---|---|
 | `/note your text` | saves the note |
 
+## Privacy & security
+
+Everything stays on your computer:
+
+| Reads | Stores |
+|---|---|
+| Your last message to Claude (for "In the chat") | only when you type `/note`: its first 140 characters, in your notes file |
+| Project folder, Git repository name, chat ID | only when you type `/note`: in your notes file |
+| Your notes file, when Claude looks up notes | the note, in **Documents/Claude-Notes.md** (German system: Claude-Notizen.md) – nowhere else |
+
+**Sends nothing anywhere.** No internet connection, no tracking, no analytics – the code has no
+network calls at all. It is open and short, so anyone can check.
+
+Two things worth knowing:
+
+- **Language check:** once per chat it runs one harmless system command to read your system language –
+  `defaults read -g AppleLanguages` on a Mac, `(Get-Culture).TwoLetterISOLanguageName` in PowerShell on Windows.
+- **Instructions for Claude:** it adds a few lines to Claude's context (e.g. how to use the tool, and the
+  one-time thank-you). You can read them in the code.
+
 > [!WARNING]
 > **Early version – updates will come.** This kind of extension is still brand new in Claude Code.
 > After an update from Anthropic something may stop working until a fix lands here.
