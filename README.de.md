@@ -58,15 +58,12 @@ Alles bleibt auf deinem Rechner:
 | Projektordner, Name des Git-Repositorys, Chat-ID | nur wenn du `/note` tippst: in deiner Notiz-Datei |
 | Deine Notiz-Datei, wenn Claude nach Notizen schaut | die Notiz, in **Dokumente/Claude-Notizen.md** (englisches System: Claude-Notes.md) – sonst nirgends |
 
-**Schickt nichts irgendwohin.** Keine Internetverbindung, kein Tracking, keine Statistik – der Code
-enthält gar keine Netzwerkaufrufe. Er ist offen und kurz, jeder kann das nachprüfen.
+**Schickt nichts irgendwohin.** Keine Internetverbindung, kein Tracking, keine Statistik. Der Code ist
+offen – du kannst es selbst nachprüfen.
 
-Zwei Dinge, die man wissen sollte:
-
-- **Sprach-Check:** Einmal pro Chat läuft ein harmloser Systembefehl, der deine Systemsprache liest –
-  `defaults read -g AppleLanguages` auf dem Mac, `(Get-Culture).TwoLetterISOLanguageName` in PowerShell unter Windows.
-- **Anweisungen an Claude:** Das Tool gibt Claude ein paar Zeilen mit (z. B. wie es das Tool benutzt, und den
-  einmaligen Danke-Satz). Nachlesen kannst du sie im Code.
+**Sprach-Check:** Damit die Beschriftungen in deiner Sprache erscheinen, liest das Tool einmal pro Chat
+deine Systemsprache mit einem harmlosen Systembefehl – `defaults read -g AppleLanguages` auf dem Mac,
+`(Get-Culture).TwoLetterISOLanguageName` in PowerShell unter Windows. Sonst wird nichts gelesen.
 
 > [!WARNING]
 > **Frühe Version – Updates kommen.** Diese Art Erweiterung ist bei Claude Code noch ganz neu.
