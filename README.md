@@ -4,7 +4,7 @@
 
 **Project notes on the side – type `/note`, done. Claude knows them and applies them.**
 
-<img src="docs/demo-en.gif" alt="Typing /note while Claude works: the note lands in the notes file with date, project and chat" width="100%">
+<img src="docs/demo-en.gif" alt="Typing /note while Claude works: the note gets pinned to your notes with project and date" width="100%">
 
 ## The problem
 
