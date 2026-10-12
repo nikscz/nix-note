@@ -12,7 +12,7 @@
       "name": "nix-note",
       "source": "./",
       "description": "/note text – project notes on the side that Claude knows and applies",
-      "version": "2.2.1"
+      "version": "2.2.2"
     }
   ]
 }

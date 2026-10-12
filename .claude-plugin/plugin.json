@@ -1,6 +1,6 @@
 {
   "name": "nix-note",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "/note text – project notes on the side that Claude knows and applies",
   "types": "./types/index.d.ts",
   "author": {
