@@ -23,15 +23,16 @@ const oneLine = (text: string, max: number) => {
 const notesPath = ($: EngineInterface) => `${$.plugin.root.split(/[\\/]\.claude[\\/]/)[0]}/${FILE}`
 
 const INSTRUCTIONS =
-  `Die Notizen des Nutzers (/note) stehen in ~/${FILE}: je Notiz Datum, Projekt, Ordner, Git, Chat-ID ` +
-  'und worum es im Chat gerade ging. Fragt er nach Notizen oder Themen, lies diese Datei und sag dazu, ' +
-  'aus welchem Projekt und Chat eine Notiz stammt.'
+  `The user's project notes (written with /note) are in ~/${FILE}: per note date, project, folder, git, ` +
+  'chat id and what the chat was about. Before you build or change something in a project, look for notes ' +
+  'of that project there and take them into account; ask before acting on a note that is outside the current ' +
+  'task. When the user asks about notes or topics, read the file and say which project and chat a note came from.'
 
 // Once after installing, Claude passes on a short thank-you from the author.
 const THANKED_KEY = 'thanked'
 const THANKS =
-  'Sag dem Nutzer am Anfang deiner nächsten Antwort einmalig in einem kurzen, herzlichen Satz: ' +
-  'nikscz bedankt sich, dass er /note (nix-note) nutzt. Danach nicht wiederholen.'
+  'At the start of your next reply, once, in one short warm sentence and in the language the user ' +
+  'writes to you in: tell them that nikscz says thank you for using nix-note. Do not repeat it later.'
 
 export const register: Register = on => {
   on('session.start', async ($, e, next) => {

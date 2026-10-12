@@ -1,7 +1,7 @@
 {
   "name": "nix-note",
-  "version": "2.0.0",
-  "description": "/note Text – Notiz mit Datum, Projekt, Ordner und Chat, nebenbei",
+  "version": "2.1.0",
+  "description": "/note Text – Projekt-Notizen nebenbei, die Claude kennt und anwendet",
   "types": "./types/index.d.ts",
   "author": {
     "name": "nikscz",

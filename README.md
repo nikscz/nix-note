@@ -1,6 +1,6 @@
 # nix note
 
-**Notizen nebenbei – `/note` tippen, fertig. Mit Projekt und Chat, damit du sie wiederfindest.**
+**Projekt-Notizen nebenbei – `/note` tippen, fertig. Claude kennt sie und wendet sie an.**
 
 > [!WARNING]
 > **Frühe Version – Updates kommen.** Diese Art Erweiterung ist bei Claude Code noch ganz neu.
@@ -25,8 +25,13 @@ ohne es zu unterbrechen. Jede Notiz bekommt automatisch:
 - Datum und Uhrzeit, Projekt und Ordner, Git-Repository (falls vorhanden)
 - worum es im Chat gerade ging, und die Chat-ID
 
-Und Claude kennt die Datei: Frag einfach *„Was hab ich mir zum Logo notiert?“* –
-Claude sucht die Notizen raus und sagt dir, aus welchem Projekt und Chat sie stammen.
+**Der eigentliche Vorteil: Claude kennt deine Notizen und wendet sie an.**
+Arbeitet Claude später an einem Projekt, schaut es vorher nach Notizen zu genau diesem Projekt
+und berücksichtigt sie – „Logo größer machen“ wird beim nächsten Design-Schritt mitgedacht.
+Gehört eine Notiz nicht zur aktuellen Aufgabe, fragt Claude erst nach.
+
+Und du kannst fragen: *„Was hab ich mir zum Logo notiert?“* – Claude sucht die Notizen raus
+und sagt dir, aus welchem Projekt und Chat sie stammen.
 
 Eine einzige Datei für alles, mit jedem Texteditor zu öffnen.
 
